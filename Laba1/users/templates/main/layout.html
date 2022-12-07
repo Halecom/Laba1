@@ -1,0 +1,29 @@
+{% load static %}
+<!doctype html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <style>
+
+    </style>
+</head>
+<body>
+    <aside>
+        <h3>Навигация</h3>
+        <ul>
+            <a href="/users/" ><li ></i>Главная</li></a>
+            <a href="/users/register/" ><li></i>Регистрация</li></a>
+            <a href="/users/logout/" ><li></i>Выйти</li></a>
+            <a href="/users/authorization/"><li></i>Авторизация</li></a>
+            <a href="/users/password_change" ><li ></i>Смена пароля</li></a>
+        </ul>
+    </aside>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+</body>
+</html>

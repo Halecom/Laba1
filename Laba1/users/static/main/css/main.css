@@ -1,0 +1,27 @@
+body {
+    background: lightgoldenrodyellow;
+}
+
+aside {
+    float: left;
+    background: darkgray;
+    width: 20%;
+    padding: 2.5%;
+    height: 100vh;
+    color: white;
+    border-right: 5px solid lightgray;
+}
+
+aside ul {list-style: none;}
+aside ul li {
+    display: block;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: all .1s ease;
+}
+
+aside ul li:hover, aside ul a:hover {
+    color: darkblue;
+    transform: scale(1.03);
+}
+

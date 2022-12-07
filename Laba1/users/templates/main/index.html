@@ -1,0 +1,10 @@
+{% extends 'main/layout.html' %}
+{% block content %}
+<div>I'm {{ user.username }}</div>
+<h1>Пользователи:</h1>
+    {% for user in users %}
+        {{ user.id }} | {{ user.username }} | {{ user.password_salt }} | {{ user.password_hash }} <br>
+    {% endfor %}
+{% endblock %}}
+
+{% block title %}Users{% endblock %}
